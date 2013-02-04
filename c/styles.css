@@ -514,7 +514,7 @@ html {
         .header .logo a.home, .header .logo a.home:active {
           /* on retina, use image that's scaled by 2 */
           background-image: url("../i/logo@2x.png");
-          background-size: 97px 83px; } }
+          background-size: 48px 42px; } }
       .header .logo a.home .icon-home, .header .logo a.home:active .icon-home {
         top: -5px;
         left: 32%;

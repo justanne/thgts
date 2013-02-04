@@ -71,7 +71,7 @@ border-top: 5px solid $dark_orangey;
 		display: block;
 		cursor: pointer;
 		background: url("../i/logo.png") center 70% no-repeat;
-		@include image-2x("../i/logo@2x.png", 97px, 83px);
+		@include image-2x("../i/logo@2x.png", 48px, 42px);
 
 			.icon-home {
 			top: -5px;
