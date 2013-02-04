@@ -1,4 +1,4 @@
 _site/
 *.sublime-project
 *.sublime-workspace
-
+codekit-config.json
