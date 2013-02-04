@@ -1,0 +1,21 @@
+<ul class="cpagination">
+  {% if paginator.previous_page %}
+  <li>{% if paginator.previous_page == 1 %}
+    <a href="/" class="icon-left-arrow" rel="prev" title="Newer Posts"><span>New Posts</span></a>
+    {% else %}
+    <a href="/page{{paginator.previous_page}}" class="icon-left-arrow" rel="prev" title="Newer Posts"><span>New Posts</span></a>
+    {% endif %}
+  </li>
+
+  {% else %}
+  <li><a class="icon-left-arrow disabled" rel="prev" title="Newer Posts"><span>New Posts</span></a></li>
+  {% endif %}
+
+  {% if paginator.next_page %}
+  <li><a href="/page{{paginator.next_page}}" class="icon-right-arrow" rel="next" title="Older Posts"><span>Old Posts</span></a></li>
+
+  {% else %}
+  <li><a href="" class="icon-right-arrow disabled" rel="next" title="Older Posts"><span>Old Posts</span></a></li>
+
+  {% endif %}
+</ul>

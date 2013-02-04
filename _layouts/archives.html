@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="content" role="main">
+  <div class="post archives">
+
+  <h2>Archives</h2>
+
+  <div class="list">
+    {% for month in page.months %}
+    <h4>{{ month | date:"%Y" }}  <span>{{ month | date:"%B" }}</span></h4><hr>
+    <ul>
+      {% for post in site.posts %}
+    
+      <li><span class="dated">{{ post.date | prettyday }}</span><span><a href="{{ post.url }}">{{ post.title }}</a></span></li>
+    
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+
+  </div>
+</div>

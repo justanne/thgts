@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="content" role="main">
+
+  {% include pagination.html %}
+
+  <div class="post">
+
+  {% for post in paginator.posts %}
+
+  <div class="title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+  <div class="postdet"><span>{{ post.date | date: "%b %d, %Y" }}</span> &bullet; <span><a title="short url" href="{{ post.url }}">{{ site.url }}{{ post.url }}</a></span> &bullet; <a title="Share this on Twitter" href="http://twitter.com/share?text=Stuff you might want to know &#45; {{ site.url }}{{ post.redirects }}&via=bbbyanne" class="icon-tt twitter" id="popup"><span>Share this on Twitter</span></a></div>
+        
+  {{ post.content }}
+  
+  {% endfor %}
+  </div>  
+
+  {% include pagination.html %}
+
+  <div class="bullet"></div>
+</div>

@@ -1,0 +1,356 @@
+// ==========================================================
+
+// 320 and Up by Andy Clarke
+// Version: 3.0
+// URL: http://stuffandnonsense.co.uk/projects/320andup/
+// Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+
+// ==========================================================
+
+/* Page =================================================== */
+
+// 1. ROOT 					==============================
+
+@-webkit-viewport { 
+width : device-width; }
+
+@-moz-viewport { 
+width : device-width; }
+
+@-ms-viewport { 
+width : device-width; }
+
+@-o-viewport { 
+width : device-width; }
+
+@viewport { 
+width : device-width; }
+
+@font-face {
+font-family: $customfont;
+src: url("../f/varela.eot");
+src: url("../f/varela.eot?#iefix") format("embedded-opentype"), 
+	 url("../f/varela.woff") format("woff"), 
+	 url("../f/varela.ttf") format("truetype"), 
+	 url("../f/varela.svg#Varela") format("svg");
+font-weight: normal;
+font-style: normal;
+}
+hr {
+height: 1px;
+border: 0;
+background: $lightgrey;
+}
+html, body {
+min-height: 100%;
+-webkit-font-smoothing: antialiased;
+}
+html {
+background : $bodycolor;
+font-size : 62.5%;
+-webkit-overflow-scrolling : touch;
+-webkit-tap-highlight-color : lighten($basecolor, 75%);
+-webkit-text-size-adjust : 100%;
+-ms-text-size-adjust : 100%; 
+}
+.header {
+border-top: 5px solid $dark_orangey;
+
+	.logo {
+	width: 5.5em;
+	height: 5.5em;
+	margin: -5px auto;
+	text-align: center;
+	position: relative;
+	@include vertical($black, $darkgrey);
+	@include box-shadow(0 7px 0 #232323);
+
+		a.home, a.home:active {
+		width: 100%;
+		height: 100%;
+		display: block;
+		cursor: pointer;
+		background: url('../i/logo.png') center 70% no-repeat;
+
+			.icon-home {
+			top: -5px;
+			left: 32%;
+			padding: 0 10px;
+			margin: 0 auto;
+			color: $white;
+			@include font-size(30);
+			position: absolute; }
+
+			&:hover {
+			border-bottom: none; }
+		}
+
+		span { 
+		display: block;
+		line-height: 0;
+		@include hide-text(); }
+	}
+
+	.intro-journal {
+	width: 90%;
+	line-height: 1.1em;
+	@include font-size(30);
+	margin: 35px auto 0;
+
+		small {		
+		color: $grey;
+		display: block;
+		line-height: 20px;
+		margin: 25px 10% 0;
+		@include font-size(14); }
+	}
+}
+body {
+margin : 0;
+height: 100%;
+position: relative;
+text-align: center;
+font-family : $customfont, $basefont;
+@include font-size();
+background: url("../i/bg.jpg") 0 0 repeat;
+line-height : $baselineheight;
+color : $textcolor;
+}
+.footer {
+width: 100%;
+bottom: 0;
+height: 100%;
+padding: 30px 0;
+margin: 50px auto 0;
+background: $default_color;
+position: relative;
+	
+	.placer {
+	@include clearfix();
+	width: 90%;
+	margin: 0 auto;
+	color: $lightgrey;
+
+		.footheading {
+		margin: 0 0 1em;
+		line-height: 24px;
+		@include font-size(24);	
+		}
+
+		p { line-height: 1.3em; }
+
+		.left {
+		width: 100%;		
+		text-align: left;
+
+			ul {
+			list-style-type: none;
+
+				li {
+				margin: 0 0 20px;
+				line-height: 1.3em; }
+			}
+
+			small {
+			color: $medgrey;
+			display: block;
+			@include font-size(12); }
+		}
+	
+		.right {
+		width: 100%;
+		text-align: left;
+			
+			p small {
+			font-size: 10px;
+			margin: 0 0 0 10px;
+
+				a {
+				color: $medgrey;
+				border-bottom: 1px dotted $darkgrey;
+
+				&:hover {
+				color: $grey; }
+				}
+			}
+		}
+	}
+}
+
+// Content
+.content {
+width: 90%;
+margin: 0 auto;
+position: relative;
+}
+
+
+.post {
+margin: 0 auto 2%;
+@include transition(all 1s ease-in-out 0s);
+
+	p {
+	text-align: justify;
+	@include font-size(16); }
+
+	.title {
+	margin: 0 auto 15px;
+	color: $dark_orangey;
+	@include font-size(24); 
+
+	a, a:visited { font-style: normal; }
+	}	
+
+	.postdet {
+	color: $lightgrey;
+	line-height: 1em;
+	vertical-align: middle;
+	@include font-size(13);
+	margin: 0 0 30px;
+
+		a { 
+		color: $grey; 
+
+			&:active { border: 0; }
+			}
+
+		span {
+		color: $grey;
+		margin: 0 0.5em; }
+	}
+	&.entry {
+	margin: 20px auto;
+	}
+}
+.bullet {
+height: 6px;
+width: 6px;
+margin: 4% auto 0;
+background: $grey;
+@include vertical($grey, $lightgrey);
+@include rounded(5px);
+
+	&.dark {
+	margin: 10px 0 25px;
+	@include vertical($darkgrey, $grey); }
+}
+a[class^="icon-"] {
+line-height: 6px;
+margin: 0 5px;
+@include font-size(30);
+	
+	&:hover {
+	color: $darkgrey;
+	border: none;
+	}
+
+	span {
+	@include visuallyhidden();
+	}
+}
+.cpagination {
+margin: 0;
+padding: 0;
+line-height: 72px;
+@include clearfix();
+list-style-type: none;
+	
+	li {
+	width: 50%;
+	float: left;
+	display: block;
+	text-align: left;
+	
+		[class^="icon-"]:before,
+		[class*=" icon-"]:before {
+		font-family : "Entypo"; }
+
+		[class^="icon-"],
+		[class*=" icon-"] {
+		width: 0.5em;
+		margin: 0;
+		color: $lightgrey;
+		@include font-size(72);
+		line-height: 72px;
+		@include rounded(3px);
+		@include transition(background 0.5s ease-in-out 0s);
+
+			&:hover {
+			color: $white;
+			background: $default_color; }
+
+			&.disabled {
+			color: $lightergrey;
+			cursor: pointer;
+			@include transition(none);
+
+				&:hover,
+				&:active,
+				&:focus {
+				cursor: default;				
+				background: 0; 
+				border: 0;
+				outline: 0;}
+			}
+		}
+	}
+
+	li:nth-child(2) {
+	text-align: right;
+	}
+
+	span {
+	@include hidden();
+	}
+}
+p > code {
+@include font-size(12);
+padding: 2px 3px;
+color: $lightgrey;
+@include rounded(2px);
+background: $default_color;
+}
+.archives {
+margin: 30px auto 0;
+
+	h2 {
+	text-align: center; }
+
+	h4 {
+	color: $grey;
+	margin: 30px 0 10px 0; }
+
+	span {
+	color: $lightgrey; }
+
+	.list {
+	margin: 30px; }
+}
+ul {
+width: 100%;
+margin: 0;
+padding: 0;
+display: table;
+list-style-type: none;
+
+	li {
+	margin: 0 0 15px 0; }
+
+	span {
+	width: 80%;	
+	text-align: left;
+	display: inline-table;
+	}
+	
+	.dated {
+	width: 20%;
+	color: $grey;
+	text-align: right;
+	padding-right: 10px;
+	@include box-sizing();
+	vertical-align: top; }
+
+	a {
+	text-align: left;
+	display: inline; }
+}

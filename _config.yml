@@ -1,0 +1,15 @@
+safe: false
+auto: true
+server: true
+baseurl: /
+permalink: /n/:title
+
+paginate: 1
+pygments: true
+markdown: rdiscount
+exclude: ["thgts.sublime-project", "thgts.sublime-workspace", "scripts.js", "codekit-config.json", "README.md"]
+
+author: Anne Barrios
+url: thgts.annebarrios.me
+home: "http://www.annebarrios.me"
+title: Thoughts on web development

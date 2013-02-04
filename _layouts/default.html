@@ -1,0 +1,12 @@
+{% include header.html %}
+
+{% if page.content contains 'archives' %}
+	{% include top_page.html %}
+	{% else %}
+	{% include top.html %}
+{% endif %}
+
+
+{{ content }}
+
+{% include footer.html %}

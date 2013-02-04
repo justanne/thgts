@@ -1,0 +1,57 @@
+.content { width: 60%; }
+
+.footer {
+
+	.placer {
+	@include clearfix();
+	width: 60%;
+	margin: 0 auto;
+	color: $lightgrey;
+
+		.left {
+		width: 25%;
+		float: left;
+		text-align: left;
+
+			small {
+			color: $medgrey;
+			display: block;
+			@include font-size(12); }
+		}
+	}
+}
+
+.footheading {
+line-height: 20px;
+@include font-size(24);
+}
+.footer .placer .right {
+width: 25%;
+float: right;
+text-align: right;
+	
+	p small {
+	font-size: 10px;
+
+		a {
+		color: $medgrey;
+		border-bottom: 1px dotted $darkgrey;
+
+		&:hover {
+		color: $grey; }
+		}
+	}
+}
+
+.bullet {
+
+	&.dark {
+	margin: 10px 90% 20px;
+	@include vertical($startColor : $darkgrey, $endColor:  $grey); }
+}
+ul {
+
+	li 		{ margin: auto; }
+	span 	{ width: 50%; }	
+	.dated 	{ width: 50%; }
+}

@@ -1,0 +1,16 @@
+{% include header.html %}
+
+{% include top_page.html %}
+
+<div class="content" role="main">
+	<div class="post entry">
+
+	<div class="title">{{ page.title }}</div>
+	<div class="postdet"><span>{{ page.date | date: "%b %d, %Y" }}</span> &bullet; <span><a href="{{ page.url }}">{{ site.url }}{{ page.url }}</a></span> &bullet; <a title="Share this on Twitter" href="https://twitter.com/share?text=Stuff you might want to know &#45; {{ site.url }}{{ post.redirects }}&via=bbbyanne" class="icon-tt twitter" id="popup"><span>Share this on Twitter</span></a></div>
+	        
+	{{ content }}
+
+	</div>
+</div>
+
+{% include footer.html %}

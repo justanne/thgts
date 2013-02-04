@@ -1,0 +1,32 @@
+<div class="footer" role="contentinfo">
+  <div class="placer">
+  <div class="left">
+    <p class="footheading">Recently</p>
+    
+    <ul>
+      {% for post in site.posts limit: 4 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a><small>{{ post.date | date: "%b.%d,.%Y" }}</small></li>
+      {% endfor %}
+    </ul>
+
+    
+  </div>
+
+  <div class="right">
+    <p class="footheading">Archives</p>
+    <p>Feel free to pull an Indiana Jones and dig the <a href="{{ base.url }}/archives.html">history</a></p>
+    <div class="bullet dark"></div>
+
+    <p class="footheading">Colophon</p>
+    <p>Built with fckwsome <a href="http://jekyllrb.com">Jekyll</a> and hosted in an open source heaven <a href="https://github.com/justanne/thgts.github.com">Github</a></p>
+
+  </div>  
+  </div>
+</div>
+
+<script type="text/javascript" src="{{ site.baseurl }}j/scripts.min.js"></script>
+
+{% include analytics.html %}
+
+</body>
+</html>
