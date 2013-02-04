@@ -7,6 +7,7 @@ permalink: /n/:title
 paginate: 1
 pygments: true
 markdown: rdiscount
+include: [".gitignore"]
 exclude: ["thgts.sublime-project", "thgts.sublime-workspace", "scripts.js", "codekit-config.json", "README.md"]
 
 author: Anne Barrios
