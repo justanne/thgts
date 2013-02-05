@@ -1,6 +1,6 @@
 My Thoughtbook
 ===========
-[http://thgts.annebarrios.me](http://thgts.annebarrios.me)
+[http://thoughts.annebarrios.me](http://thoughts.annebarrios.me)
 
 Purely thoughts, ideas, opinions, and perhaps tips/tricks that I learn as I sail by on the web development world.
 
