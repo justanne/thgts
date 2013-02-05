@@ -11,6 +11,6 @@ include: [".gitignore"]
 exclude: ["thgts.sublime-project", "thgts.sublime-workspace", "scripts.js", "codekit-config.json", "README.md"]
 
 author: Anne Barrios
-url: thgts.annebarrios.me
+url: thoughts.annebarrios.me
 home: "http://www.annebarrios.me"
 title: Thoughts on web development
