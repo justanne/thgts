@@ -49,7 +49,7 @@ text-align: right;
 	margin: 10px 90% 20px;
 	@include vertical($startColor : $darkgrey, $endColor:  $grey); }
 }
-ul {
+.list ul {
 
 	li 		{ margin: auto; }
 	span 	{ width: 50%; }	
