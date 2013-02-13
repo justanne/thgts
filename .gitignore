@@ -1,3 +1,4 @@
 *.sublime-project
 *.sublime-workspace
 codekit-config.json
+_plugins/authenticate.rb
