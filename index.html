@@ -10,7 +10,7 @@ layout: default
   {% for post in paginator.posts %}
 
   <div class="title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-  <div class="postdet"><span>{{ post.date | date: "%b %d, %Y" }}</span> &bullet; <span><a title="short url" href="{{ post.url }}">{{ post.url | shorten }}</a></span> &bullet; <a title="Share this on Twitter" href="http://twitter.com/share?text=Stuff+you+might+be+interested+with+{{ post.url | shorten }}&via=bbbyanne" class="icon-tt twitter" id="popup"><span>Share this on Twitter</span></a></div>
+  <div class="postdet"><span>{{ post.date | date: "%b %d, %Y" }}</span> &bullet; <span><a title="short url" href="{{ post.url }}">{{ post.url | shorten }}</a></span> &bullet; <a title="Share this on Twitter" href="http://twitter.com/share?text=Stuff+you+might+be+interested+with+{{ post.url | shorten }}&via=bbbyanne" class="icon-tt" id="popup"><span>Share this on Twitter</span></a></div>
         
   {{ post.content }}
   
