@@ -124,6 +124,7 @@ small {
 
 ul,
 ol {
+list-style-position: inside;
 margin : 0 0 $baselineheight #{-$gutterwidth};
 padding : 0 0 0 $gutterwidth; }
 
