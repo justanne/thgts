@@ -16,7 +16,7 @@ module Jekyll
         def shorten(url)
 
         # Don't punish me for hardcoding, I'm still learning :)
-        siteURL = "http://www.annebarrios.me"
+        siteURL = "http://thoughts.annebarrios.me"
         longURL = siteURL + url
 
         # Hiding API token, not for public consumption...
