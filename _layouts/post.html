@@ -6,7 +6,7 @@
 	<div class="post entry">
 
 	<div class="title">{{ page.title }}</div>
-	<div class="postdet"><span>{{ page.date | date: "%b %d, %Y" }}</span> &bullet; <span><a href="{{ page.url }}">{{ page.url | shorten }}</a></span> &bullet; <a title="Share this on Twitter" href="http://twitter.com/share?text=Stuff+you+might+be+interested+with+{{ page.url | shorten }}&via=bbbyanne" class="icon-tt" id="popup"><span>Share this on Twitter</span></a></div>
+	<div class="postdet"><span>{{ page.date | date: "%b %d, %Y" }}</span> &bullet; <span><input type="text" value="{{ page.url | shorten }}" /></span> &bullet; <a title="Share this on Twitter" href="http://twitter.com/share?text=Stuff+you+might+be+interested+with&via=bbbyanne" class="icon-tt" id="popup"><span>Share this on Twitter</span></a></div>
 	        
 	{{ content }}
 
