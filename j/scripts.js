@@ -23,7 +23,7 @@ $(document).ready(function() {
   insBullet();
 
   // Popup Twitter
-  $('#popup').click(function() {
+  $('.popup').click(function() {
   var width  = 400,
       height = 350,
       left   = ($(window).width()  - width)  / 2,
