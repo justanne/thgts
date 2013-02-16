@@ -199,25 +199,35 @@ margin: 0 auto 2%;
 	color: $dark_orangey;
 	@include font-size(34); 
 
-	a, a:visited { font-style: normal; }
+		a, a:visited { font-style: normal; }
 	}	
 
 	.postdet {
 	color: $lightgrey;
 	line-height: 1em;
 	vertical-align: middle;
-	@include font-size(13);
+	@include font-size(14);
 	margin: 0 0 30px;
 
 		a { 
 		color: $grey; 
 
 			&:active { border: 0; }
-			}
+		}
 
 		span {
 		color: $grey;
 		margin: 0 0.5em; }
+
+		input {		
+		color: $grey;
+		border: none;
+		width: 85px;	
+		@include font-size(13);
+		background: transparent;
+		
+			&:focus { outline: none; }
+		}
 	}
 	&.entry {
 	margin: 20px auto;

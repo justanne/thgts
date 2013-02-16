@@ -40,6 +40,10 @@ $(document).ready(function() {
   return false;
   });
 
+  $(".postdet input[type=text]").click(function() {
+     $(this).select();
+  });
+
 });
 
 // On window resize, call insBullet
