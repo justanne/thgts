@@ -22,26 +22,20 @@ $(document).ready(function() {
   // Check window size for inserting bullet
   insBullet();
 
-  // Popup Twitter
-  $('.popup').click(function() {
-  var width  = 400,
-      height = 350,
-      left   = ($(window).width()  - width)  / 2,
-      top    = ($(window).height() - height) / 2,
-      url    = this.href,
-      opts   = 'status=1' +
-               ',width='  + width  +
-               ',height=' + height +
-               ',top='    + top    +
-               ',left='   + left;
-
-  window.open(url, 'twitter', opts);
-
-  return false;
+  // Copy short link
+  $(".tweetThis").hover(function(){
+    $(this).animate({
+      marginLeft: "+3.5em" }, 500, function(){
+        $(".shorty").show().click(function(){
+        $(this).select();
+      });
+    });
   });
 
-  $(".postdet input[type=text]").click(function() {
-     $(this).select();
+  // ...and on losing focus
+  $(".shorty").mouseout(function(){
+    $(".tweetThis").delay(1200).animate({ marginLeft: "0em" }, 500);
+  $(this).delay(1200).fadeOut(200);
   });
 
 });
