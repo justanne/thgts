@@ -35,11 +35,11 @@ border-bottom: 1px dotted $darkgrey; }
 }
 
 ::-moz-selection {
-background-color : darken($pastel, 5%);
+background-color : $lightergrey;
 text-shadow : none; }
 
 ::selection {
-background-color : darken($pastel, 5%);
+background-color : $lightergrey;
 text-shadow : none; }
 
 // swatches

@@ -25,16 +25,16 @@ $(document).ready(function() {
   // Copy short link
   $(".tweetThis").hover(function(){
     $(this).animate({
-      marginLeft: "+3.5em" }, 500, function(){
+      marginLeft: "+3.2em" }, 500, function(){
         $(".shorty").show().click(function(){
-        $(this).select();
+        $(this).css("color","#333333").select();
       });
     });
   });
 
   // ...and on losing focus
   $(".shorty").mouseout(function(){
-    $(".tweetThis").delay(1200).animate({ marginLeft: "0em" }, 500);
+    $(".tweetThis").delay(1200).animate({ marginLeft: "0" }, 500);
   $(this).delay(1200).fadeOut(200);
   });
 

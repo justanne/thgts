@@ -116,7 +116,7 @@ ul,
 dl,
 address {
 margin-bottom : $baselineheight;
-@include font-size(14);
+@include font-size(20);
 line-height : $baselineheight; }
 
 small {
@@ -124,14 +124,19 @@ small {
 
 ul,
 ol {
-list-style-position: inside;
 margin : 0 0 $baselineheight #{-$gutterwidth};
-padding : 0 0 0 $gutterwidth; }
+padding : 0 0 0 $gutterwidth; 
+list-style-position: inside;
+}
 
 li ul,
 li ol {
 margin : 0;
 @include font-size(16); }
+
+ol {
+list-style: decimal;
+}
 
 // blockquote
 
@@ -183,8 +188,8 @@ border-bottom : 1px dotted $bordercolor;
 cursor : help; }
 
 b, strong {
-color: $black;
-font-weight: normal; }
+color: $default_color;
+font-weight: bold; }
 
 dfn {
 font-style : italic; }
