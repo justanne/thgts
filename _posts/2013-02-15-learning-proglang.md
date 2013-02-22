@@ -2,6 +2,14 @@
 layout: post
 title: Learning (on-the-fly) programming languages
 published: true
+tags:
+- development
+- python
+- heroku
+- ruby
+- flask
+- jekyll
+
 ---
 
 For two days I've able to do 2 milestones. The other day I've created a Ruby plugin for Jekyll using Bit.ly API. Nothing much about the [code](https://github.com/justanne/thgts/blob/src/_plugins/shorten.rb), I've actually searched for an existing Bitly plugin that I can use but those I've downloaded doesn't work for me. The plugin I just did creates a shortlink on the permalinks that Jekyll generates. 

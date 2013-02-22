@@ -196,7 +196,26 @@ margin: 0 auto 2%;
 	@include font-size(20); }
 
 	ol, ul {
-	margin: 0 0 0 20px;
+	margin: 0 0 0 20px; }
+
+	.post-img {	
+	height: 150px;
+	max-height: 150px;	
+	margin: 0 0 20px;
+	overflow: hidden;
+	position: relative;
+	background: $black;
+	border: 1px solid $pastel;
+	@include box-shadow(0 0 1px $darkgrey);
+	}
+	img {
+	top: 0;
+	left: 0;
+	width: 100%;	
+	display: block;
+	position: absolute;
+	@include box-sizing();
+	
 	}
 
 	.title {
@@ -207,6 +226,9 @@ margin: 0 auto 2%;
 
 		a, a:visited { font-style: normal; }
 	}	
+	.title.single { 
+	color: $textcolor;
+	@include font-size(37); }
 
 	.postdet {
 	color: $lightgrey;	

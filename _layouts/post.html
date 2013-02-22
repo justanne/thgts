@@ -5,9 +5,14 @@
 <div class="content" role="main">
 	<div class="post entry">
 
-	<div class="title">{{ page.title }}</div>
+	<div class="title single">{{ page.title }}</div>
 	<div class="postdet"><span>{{ page.date | date: "%b %d, %Y" }}</span> &bullet; <span><a class="icon-tt tweetThis" href="#"></a><input class="shorty" type="text" value="{{ page.url | shorten }}"></span></div>
-	        
+	
+	{% if post.image %}        
+	<div class="post-img">
+		<img src="{{ site.baseurl }}{{ page.image }}" alt="">
+	</div>
+	{% endif %}
 	{{ content }}
 
 	</div>

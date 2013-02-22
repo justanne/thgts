@@ -2,6 +2,11 @@
 layout: post
 title: Hello, Jekyll!
 published: true
+image: i/image-01.png
+tags:
+- development
+- jekyll
+
 ---
 
 Finally, after crazy dragging my butt out of the bed every early dawn in the morning and a result of palpitating arteries courtesy of a strong coffee, introducing, a **Jekyll**-powered journal!
