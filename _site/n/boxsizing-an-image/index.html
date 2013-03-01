@@ -14,43 +14,26 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-<title>Anne Barrios ::  Thoughts on web development </title>
+<title>Anne Barrios ::  Box-Sizing an Image </title>
 
 </head>
 
-
-	<body>
+<body>
 <div class="header" role="banner">
-  <div class="logo"><a href="/" class="home"><span>Anne Barrios - Web &amp; UI Designer</span></a></div>
-  <div class="intro-journal">Blog? Just call me thought book.<small>Design and web development by <a href="//www.annebarrios.me">Anne Barrios</a></small></div>
+  <div class="logo"><a href="/" class="home"><span>Anne Barrios - Web &amp; UI Designer</span><div class='icon-home bg-swatch2'></div></a></div>
+  <div class="intro-journal"><small>Design and web development by <a href="//www.annebarrios.me">Anne Barrios</a></small></div>
 </div>
 
 <div class="bullet"></div>
 
-
-
 <div class="content" role="main">
+	<div class="post entry">
 
-  <ul class="cpagination">
-  
-  <li><a class="icon-left-arrow disabled" rel="prev" title="Newer Posts"><span>New Posts</span></a></li>
-  
-
-  
-  <li><a href="/page2" class="icon-right-arrow" rel="next" title="Older Posts"><span>Old Posts</span></a></li>
-
-  
-</ul>
-
-  <div class="post">
-
-  
-
-  <div class="title"><a href="/n/boxsizing-an-image">Box-Sizing an Image</a></div>
-  <div class="postdet"><span class="date">Mar 01, 2013</span> &bullet; <span><a class="icon-tt tweetThis" href="#"></a><input class="shorty" type="text" value="j.mp/Wvm1Th"></span></div>
-       
-  
-  <p>Recently while I'm adding a feature image on the blog entries I encountered somewhat an obvious thing that we should be aware of. We know how <code>box-sizing</code> keeps the <a href="http://css-tricks.com/box-sizing/">border and the padding inside the box</a> instead of adding extra width on the box outside. But do you know that if you apply it to an image itself together with a border, it will distort/blur the image by squeezing it inside? This is not what we want especially if you have the image optimized for a fixed width and height.</p>
+	<div class="title single">Box-Sizing an Image</div>
+	<div class="postdet"><span>Mar 01, 2013</span> &bullet; <span><a class="icon-tt tweetThis" href="#"></a><input class="shorty" type="text" value="j.mp/Wvm1Th"></span></div>
+	
+	
+	<p>Recently while I'm adding a feature image on the blog entries I encountered somewhat an obvious thing that we should be aware of. We know how <code>box-sizing</code> keeps the <a href="http://css-tricks.com/box-sizing/">border and the padding inside the box</a> instead of adding extra width on the box outside. But do you know that if you apply it to an image itself together with a border, it will distort/blur the image by squeezing it inside? This is not what we want especially if you have the image optimized for a fixed width and height.</p>
 
 <pre class="codepen" data-height="300" data-type="result" data-href="klbnz" data-user="justanne" data-safe="true"> <code> </code> <a href="http://codepen.io/justanne/pen/klbnz">Check out this Pen!</a> </pre>
 
@@ -58,24 +41,9 @@
 <script async src="http://codepen.io/assets/embed/ei.js"></script>
 
 
-  
-  
-  </div>  
 
-  <ul class="cpagination">
-  
-  <li><a class="icon-left-arrow disabled" rel="prev" title="Newer Posts"><span>New Posts</span></a></li>
-  
-
-  
-  <li><a href="/page2" class="icon-right-arrow" rel="next" title="Older Posts"><span>Old Posts</span></a></li>
-
-  
-</ul>
-
-  <div class="bullet"></div>
+	</div>
 </div>
-
 
 <div class="footer" role="contentinfo">
   <div class="placer">

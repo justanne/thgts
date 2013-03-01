@@ -3,12 +3,15 @@ text-align: left;
 line-height: 1.4em;
 padding: 10px;
 @include font-size(12);
-@include rounded(2px);
-background: $default_color;
+@include rounded(1px);
+@include box-sizing();
+@include horizontal(#1E2021, #2B2C2D);
 overflow: scroll;
+border: 1px solid rgba(255,255,255,1);
+@include box-shadow(0 0 1px #000);
 
   ::selection {
-  background: darken($default_color, 5%);
+  background: $lightgrey;
   }
 
   .hll {

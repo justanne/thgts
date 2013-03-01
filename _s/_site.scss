@@ -208,16 +208,14 @@ margin: 0 auto 2%;
 	border: 1px solid $pastel;
 	@include box-shadow(0 0 1px $darkgrey);
 	}
-	img {
+	.post-img img {
 	top: 0;
 	left: 0;
 	width: 100%;	
 	display: block;
 	position: absolute;
 	@include box-sizing();
-	
-	}
-
+	}		
 	.title {
 	margin: 0 auto 15px;
 	color: $dark_orangey;
