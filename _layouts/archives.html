@@ -10,7 +10,7 @@ layout: default
     {% for month in page.months %}
     <h4>{{ month | date:"%Y" }}  <span>{{ month | date:"%B" }}</span></h4><hr>
     <ul>
-      {% for post in site.posts %}
+      {% for post in page.posts_by_month[month] %}
     
       <li><span class="dated">{{ post.date | prettyday }}</span><span><a href="{{ post.url }}">{{ post.title }}</a></span></li>
     
