@@ -14,3 +14,6 @@ author: Anne Barrios
 url: thoughts.annebarrios.me
 home: "//www.annebarrios.me"
 title: Thoughts on web development
+
+asset_pipeline:
+  gzip: true

@@ -8,9 +8,9 @@
 	<div class="title single">{{ page.title }}</div>
 	<div class="postdet"><span>{{ page.date | date: "%b %d, %Y" }}</span> &bullet; <span><a class="icon-tt tweetThis" href="#"></a><input class="shorty" type="text" value="{{ page.url | shorten }}"></span></div>
 	
-	{% if post.image %}        
+	{% if page.image %}        
 	<div class="post-img">
-		<img src="{{ site.baseurl }}{{ page.image }}" alt="">
+		<img src="{{ site.baseurl }}{{ page.image }}" style="top: {{ page.position-y }}" alt="">
 	</div>
 	{% endif %}
 	{{ content }}

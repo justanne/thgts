@@ -48,7 +48,7 @@ min-height: 100%;
 }
 html {
 background : $bodycolor;
-font-size : 62.5%;
+font-size : 52.5%;
 -webkit-overflow-scrolling : touch;
 -webkit-tap-highlight-color : lighten($basecolor, 75%);
 -webkit-text-size-adjust : 100%;
@@ -104,7 +104,7 @@ border-top: 5px solid $dark_orangey;
 		display: block;
 		line-height: 20px;
 		margin: 25px 10% 0;
-		@include font-size(14); }
+		@include font-size(18); }
 	}
 }
 body {
@@ -156,7 +156,7 @@ position: relative;
 			small {
 			color: $medgrey;
 			display: block;
-			@include font-size(12); }
+			@include font-size(16); }
 		}
 	
 		.right {
@@ -198,9 +198,10 @@ margin: 0 auto 2%;
 	ol, ul {
 	margin: 0 0 0 20px; }
 
+	blockquote > p { @include font-size(24); }
+
 	.post-img {	
-	height: 150px;
-	max-height: 150px;	
+	height: 250px;	
 	margin: 0 0 20px;
 	overflow: hidden;
 	position: relative;
@@ -209,9 +210,8 @@ margin: 0 auto 2%;
 	@include box-shadow(0 0 1px $darkgrey);
 	}
 	.post-img img {
-	top: 0;
-	left: 0;
-	width: 100%;	
+	top: -220px;
+	left: -200px;	
 	display: block;
 	position: absolute;
 	@include box-sizing();
@@ -231,7 +231,7 @@ margin: 0 auto 2%;
 	.postdet {
 	color: $lightgrey;	
 	vertical-align: middle;
-	@include font-size(14);
+	@include font-size(16);
 	margin: 0 0 30px;	
 	position: relative;
 
@@ -266,7 +266,7 @@ margin: 0 auto 2%;
 		color: $grey;
 		border: none;
 		width: 90px;	
-		@include font-size(13);
+		@include font-size(16);
 		background: transparent;
 		
 			&:focus { outline: none; }

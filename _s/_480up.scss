@@ -12,11 +12,6 @@
 		width: 40%;
 		float: left;
 		text-align: left;
-
-			small {
-			color: $medgrey;
-			display: block;
-			@include font-size(12); }
 		}
 	}
 }
@@ -54,11 +49,4 @@ text-align: right;
 	li 		{ margin: auto; }
 	span 	{ width: 50%; }	
 	.dated 	{ width: 50%; }
-}
-.post .post-img {	
-	height: 300px;
-	max-height: 300px;
-}
-.post img {
-width: auto;
 }

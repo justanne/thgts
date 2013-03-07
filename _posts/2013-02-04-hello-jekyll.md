@@ -2,7 +2,9 @@
 layout: post
 title: Hello, Jekyll!
 published: true
-image: i/image-01.png
+image: i/image-01.jpg
+x: -410px
+y: -110px
 tags:
 - development
 - jekyll

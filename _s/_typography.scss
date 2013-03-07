@@ -141,11 +141,14 @@ list-style: decimal;
 // blockquote
 
 blockquote  {
+color: $dark_orangey;
 margin : 0 0 $baselineheight #{-$gutterwidth};
 padding-left : $gutterwidth;
-border-left : 2px solid $bordercolor;
-font-family : $altfont;
-font-style : normal; }
+margin-left: 0;
+border-left : 3px solid $dark_orangey;
+font-family : $customfont, $basefont;
+font-style : italic; 	
+}
 
 q {
 quotes : none; }

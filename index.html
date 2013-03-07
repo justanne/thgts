@@ -14,7 +14,7 @@ layout: default
        
   {% if post.image %} 
   <div class="post-img">
-      <img src="{{ site.baseurl }}{{ post.image }}" alt="">
+      <img src="{{ site.baseurl }}{{ post.image }}" style="top: {{ post.y }}; left: {{ post.x }};" alt="">
   </div>
   {% endif %}
   {{ post.content }}
