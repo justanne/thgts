@@ -196,7 +196,8 @@ margin: 0 auto 2%;
 	@include font-size(20); }
 
 	ol, ul {
-	margin: 0 0 0 20px; }
+	text-align: left;
+	margin: -10px 0 20px 20px; }
 
 	blockquote > p { @include font-size(24); }
 
