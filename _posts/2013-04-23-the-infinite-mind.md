@@ -18,7 +18,7 @@ This is all about, why **real** creativity doesn't just happens everyday, or oth
 
 <img src="http://i.imgur.com/PEXCKfg.jpg" />
 
-Reiterating Matthew Inman: *"if you don't have anything to write about, **don't write**"*. And we had the same view, sometimes I haven't updated my blog because there aren't something new worth sharing or informative. We are looking at a quality, rather than the quantity. Wouldn't you like to anticipate the next storyline as interesting, rather being updated regularly but the story is getting boring and repititive…? Now you know, why comic book and manga releases once a month, and you can't just wait for next month to come! *(I'm a manga fan, and a "The Walking Dead" reader)*
+Reiterating Matthew Inman: *"if you don't have anything to write about, **don't write**"*. And we had the same view, sometimes I haven't updated my blog because there aren't something new worth sharing or informative. We are looking at a quality, rather than the quantity. Wouldn't you like to anticipate the next storyline as interesting, rather being updated regularly but the story is getting boring and repetitive…? Now you know, why comic book and manga releases once a month, and you can't just wait for next month to come! *(I'm a manga fan, and a "The Walking Dead" reader)*
 
 <img src="http://i.imgur.com/nEX82Eq.jpg" />
 <img src="http://i.imgur.com/mrPuVFd.jpg" />
